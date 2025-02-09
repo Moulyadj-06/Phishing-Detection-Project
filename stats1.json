@@ -1,0 +1,87 @@
+{
+    "total_urls": 20,
+    "phishing_urls": 7,
+    "legit_urls": 13,
+    "urls": [
+        {
+            "url": "https://news.cnet.com/2100-1040-231094.html",
+            "result": "Legitimate"
+        },
+        {
+            "url": "https://example.com",
+            "result": "Legitimate"
+        },
+        {
+            "url": "http://example-computer-support.xyz",
+            "result": "Phishing"
+        },
+        {
+            "url": "http://secureupdate.appleld.com.duilawyeryork.com/ap",
+            "result": "Legitimate"
+        },
+        {
+            "url": "http://vaportotal.net/catalog/language/english/product/special/index.php?cid=474fe1ba8fa8cfd26e81532c7baac4a1&amp;SSID=d2b816c9e8292c96546684e342c2e77cd27f39cf",
+            "result": "Legitimate"
+        },
+        {
+            "url": "https://www.wikipedia.org",
+            "result": "Legitimate"
+        },
+        {
+            "url": "\thttps://limitefacils.netlify.app/",
+            "result": "Legitimate"
+        },
+        {
+            "url": "https://www.phishtank.com/phish_detail.php?phish_id=8965364",
+            "result": "Legitimate"
+        },
+        {
+            "url": "\thttp://monkyclaim.live",
+            "result": "Legitimate"
+        },
+        {
+            "url": "\thttps://monkyclaim.live",
+            "result": "Legitimate"
+        },
+        {
+            "url": "https://www.phishtank.com/phish_detail.php?phish_id=8965359",
+            "result": "Legitimate"
+        },
+        {
+            "url": "https://www.wikipedia.org",
+            "result": "Phishing"
+        },
+        {
+            "url": "https://www.phishtank.com/phish_detail.php?phish_id=8965359",
+            "result": "Phishing"
+        },
+        {
+            "url": "\thttps://monkyclaim.live",
+            "result": "Phishing"
+        },
+        {
+            "url": "https://www.wikipedia.org",
+            "result": "Legitimate"
+        },
+        {
+            "url": "http://example-computer-support.xyz",
+            "result": "Phishing"
+        },
+        {
+            "url": "https://www.wikipedia.org",
+            "result": "Legitimate"
+        },
+        {
+            "url": "http://example-computer-support.xyz",
+            "result": "Phishing"
+        },
+        {
+            "url": "https://www.amazon.com",
+            "result": "Legitimate"
+        },
+        {
+            "url": "http://example-computer-support.xyz",
+            "result": "Phishing"
+        }
+    ]
+}

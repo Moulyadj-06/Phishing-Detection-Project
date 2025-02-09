@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Phishing Detection</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/prediction">Prediction</a></li>
+                <li class="nav-item"><a class="nav-link" href="/dataset">Dataset</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/stats">Statistics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">📊 Phishing Detection Statistics</h2>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card bg-primary text-white p-3">
+                    <h3>Total URLs Analyzed</h3>
+                    <h4>{{ stats.total_urls }}</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-danger text-white p-3">
+                    <h3>Phishing URLs</h3>
+                    <h4>{{ stats.phishing_urls }}</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-success text-white p-3">
+                    <h3>Legitimate URLs</h3>
+                    <h4>{{ stats.legit_urls }}</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corrected Chart Container -->
+        <div class="d-flex justify-content-center mt-4">
+            <canvas id="phishingChart" style="max-width: 300px; max-height: 300px;"></canvas>
+        </div>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('phishingChart').getContext('2d');
+        var phishingChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Phishing', 'Legitimate'],
+                datasets: [{
+                    data: [{{ stats.phishing_urls }}, {{ stats.legit_urls }}],
+                    backgroundColor: ['#dc3545', '#28a745']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+
+</body>
+</html>
