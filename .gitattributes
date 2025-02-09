@@ -1,0 +1,5 @@
+*.py   linguist-detectabl=true
+*.js   linguist-detectabl=true
+*.json linguist-detectabl=true
+
+
